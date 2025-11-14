@@ -1,6 +1,6 @@
-import { Video } from "expo-av";
+import { ResizeMode, Video } from "expo-av";
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import Header from '../Components/header';
 
 const ChatBot = () => {
@@ -8,17 +8,21 @@ const ChatBot = () => {
     <View>
       <View style={styles.header}></View>
       <Header />
-      <View style={styles.chatboxx}>
-        <Video
-          source={require("../../assets/images/backvideo.mp4")}
-          style={styles.backvideo}
-          resizeMode="cover"
-          shouldPlay
-          isLooping
-          isMuted
-        />
-        <Text style={styles.chatbo}>ChatBot Comming Soon</Text>
-      </View>
+      <ScrollView
+        decelerationRate="normal" bounces={true}
+      >
+        <View style={styles.chatboxx}>
+          <Video
+            source={require("../../assets/images/backvideo.mp4")}
+            style={styles.backvideo}
+            resizeMode={ResizeMode.COVER}
+            shouldPlay
+            isLooping
+            isMuted
+          />
+          <Text style={styles.chatbo}>ChatBot Comming Soon</Text>
+        </View>
+      </ScrollView>
     </View>
   )
 }

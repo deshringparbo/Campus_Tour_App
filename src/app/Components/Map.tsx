@@ -15,7 +15,8 @@ const Map = ({ height = 450, width = '100%' }) => {
 
 
                     <MapView
-                        style={{ width: '100%', height: '100%', borderRadius: 10 }}
+                        style={{ width: '100%', height: '100%', borderRadius: 2 }}
+                        mapType='hybrid'
                         initialRegion={{
                             latitude: 26.090829,
                             longitude: 91.725019,
@@ -23,6 +24,20 @@ const Map = ({ height = 450, width = '100%' }) => {
                             longitudeDelta: 0.01,
                         }}
                     >
+                        <Marker
+                            coordinate={{ latitude: 26.090829, longitude: 91.725019 }}
+                            title="Scholar's Institute of Technology and Management"
+                            description="Campus Location"
+                        >
+                            {/* <View style={styles.callout}>
+                                <Text style={styles.calloutTitle}>Scholar's Institute of Technology and Management</Text>
+                                <Text style={styles.calloutDescription1}> 26.090629, 91.725019</Text>
+                                <Text style={styles.calloutDescription}>Campus Location</Text>
+                            </View> */}
+
+                        </Marker>
+
+
                         <Marker
                             coordinate={{ latitude: 26.090629, longitude: 91.725019 }}
                             onPress={() => setSelectedMarker(1)}
@@ -35,6 +50,9 @@ const Map = ({ height = 450, width = '100%' }) => {
                                 </View>
                             </Callout>
                         </Marker>
+
+
+
                         <Marker
                             coordinate={{ latitude: 26.090614, longitude: 91.723662 }}
                             onPress={() => setSelectedMarker(2)}
@@ -42,6 +60,7 @@ const Map = ({ height = 450, width = '100%' }) => {
                             <Callout tooltip>
                                 <View style={styles.callout}>
                                     <Text style={styles.calloutTitle}>SITM Boy's Hostel</Text>
+                                    <Text style={styles.calloutDescription1}> 26.090614, 91.723662</Text>
                                     <Text style={styles.calloutDescription}>Campus Location</Text>
                                 </View>
                             </Callout>
@@ -53,6 +72,7 @@ const Map = ({ height = 450, width = '100%' }) => {
                             <Callout tooltip>
                                 <View style={styles.callout}>
                                     <Text style={styles.calloutTitle}>SITM Playground</Text>
+                                    <Text style={styles.calloutDescription1}> 26.090660, 91.724605</Text>
                                     <Text style={styles.calloutDescription}>Campus Location</Text>
                                 </View>
                             </Callout>
@@ -64,20 +84,23 @@ const Map = ({ height = 450, width = '100%' }) => {
                             <Callout tooltip>
                                 <View style={styles.callout}>
                                     <Text style={styles.calloutTitle}>SITM B-Block Building</Text>
+                                    <Text style={styles.calloutDescription1}> 26.091095, 91.724598</Text>
                                     <Text style={styles.calloutDescription}>Campus Location</Text>
                                 </View>
                             </Callout>
                         </Marker>
+
                     </MapView>
                 </View>
-            )}
-        </View>
+            )
+            }
+        </View >
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        borderRadius: 10,
+        borderRadius: 2,
         backgroundColor: '#f0feffff',
         padding: 20,
 
@@ -111,7 +134,7 @@ const styles = StyleSheet.create({
     },
     calloutDescription1: {
         fontSize: 9,
-        color: '#666',
+        color: '#007bffff',
     },
 });
 
