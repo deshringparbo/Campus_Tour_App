@@ -20,7 +20,7 @@ const ChatBot = () => {
             isLooping
             isMuted
           />
-          <Text style={styles.chatbo}>ChatBot Comming Soon</Text>
+          <Text style={styles.chatbo}>ChatBot Coming Soon</Text>
         </View>
       </ScrollView>
     </View>

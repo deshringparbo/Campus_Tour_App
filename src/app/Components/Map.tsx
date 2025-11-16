@@ -15,7 +15,7 @@ const Map = ({ height = 450, width = '100%' }) => {
 
 
                     <MapView
-                        style={{ width: '100%', height: '100%', borderRadius: 2 }}
+                        style={{ width: '100%', height: '100%' }}
                         mapType='hybrid'
                         initialRegion={{
                             latitude: 26.090829,
@@ -26,14 +26,9 @@ const Map = ({ height = 450, width = '100%' }) => {
                     >
                         <Marker
                             coordinate={{ latitude: 26.090829, longitude: 91.725019 }}
-                            title="Scholar's Institute of Technology and Management"
-                            description="Campus Location"
+                            title="SITM GHY"
+                            description=""
                         >
-                            {/* <View style={styles.callout}>
-                                <Text style={styles.calloutTitle}>Scholar's Institute of Technology and Management</Text>
-                                <Text style={styles.calloutDescription1}> 26.090629, 91.725019</Text>
-                                <Text style={styles.calloutDescription}>Campus Location</Text>
-                            </View> */}
 
                         </Marker>
 
