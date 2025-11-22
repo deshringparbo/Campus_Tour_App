@@ -3,7 +3,7 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 import MapView, { Callout, Marker } from 'react-native-maps';
 
 const Map = ({ height = 450, width = '100%' }) => {
-    const [selectedMarker, setSelectedMarker] = useState<number | null>(null);
+    const [selectedMarker, setSelectedMarker] = useState<number | null>(0);
 
     return (
         <View style={[styles.container, { height, ...(typeof width === 'number' ? { width } : { width: width as any }) }]}>
@@ -16,7 +16,7 @@ const Map = ({ height = 450, width = '100%' }) => {
 
                     <MapView
                         style={{ width: '100%', height: '100%' }}
-                        mapType='hybrid'
+                        mapType='hybridFlyover'
                         initialRegion={{
                             latitude: 26.090829,
                             longitude: 91.725019,
@@ -27,7 +27,7 @@ const Map = ({ height = 450, width = '100%' }) => {
                         <Marker
                             coordinate={{ latitude: 26.090829, longitude: 91.725019 }}
                             title="SITM GHY"
-                            description=""
+                            description="campus location"
                         >
 
                         </Marker>
@@ -50,7 +50,7 @@ const Map = ({ height = 450, width = '100%' }) => {
 
                         <Marker
                             coordinate={{ latitude: 26.090614, longitude: 91.723662 }}
-                            onPress={() => setSelectedMarker(2)}
+                            onPress={() => setSelectedMarker(0)}
                         >
                             <Callout tooltip>
                                 <View style={styles.callout}>
@@ -62,7 +62,7 @@ const Map = ({ height = 450, width = '100%' }) => {
                         </Marker>
                         <Marker
                             coordinate={{ latitude: 26.090660, longitude: 91.724605 }}
-                            onPress={() => setSelectedMarker(3)}
+                            onPress={() => setSelectedMarker(1)}
                         >
                             <Callout tooltip>
                                 <View style={styles.callout}>
@@ -74,7 +74,7 @@ const Map = ({ height = 450, width = '100%' }) => {
                         </Marker>
                         <Marker
                             coordinate={{ latitude: 26.091095, longitude: 91.724598 }}
-                            onPress={() => setSelectedMarker(4)}
+                            onPress={() => setSelectedMarker(1)}
                         >
                             <Callout tooltip>
                                 <View style={styles.callout}>
