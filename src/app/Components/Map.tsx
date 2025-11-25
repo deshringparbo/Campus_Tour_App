@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import MapView, { Callout, Marker } from 'react-native-maps';
 
-const Map = ({ height = 450, width = '100%' }) => {
+const Map = ({ height = 650, width = '100%' }) => {
     const [selectedMarker, setSelectedMarker] = useState<number | null>(0);
 
     return (
@@ -32,7 +32,6 @@ const Map = ({ height = 450, width = '100%' }) => {
 
                         </Marker>
 
-
                         <Marker
                             coordinate={{ latitude: 26.090629, longitude: 91.725019 }}
                             onPress={() => setSelectedMarker(1)}
@@ -45,8 +44,6 @@ const Map = ({ height = 450, width = '100%' }) => {
                                 </View>
                             </Callout>
                         </Marker>
-
-
 
                         <Marker
                             coordinate={{ latitude: 26.090614, longitude: 91.723662 }}

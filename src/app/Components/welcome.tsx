@@ -1,32 +1,32 @@
 import React from 'react'
-import { Text, View,StyleSheet } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 
 const welcome = () => {
-    return (
-        <View style={styles.welcomebox}>
-            <Text style={styles.banner}>Your personalize tour is awaits.</Text>
-        </View>
-    )
+  return (
+    <View style={styles.welcomebox}>
+      <Text style={styles.banner}>Your personalize tour is awaits.</Text>
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
-    welcomebox: {
-    height: 200,
+  welcomebox: {
+    height: 150,
     width: '100%',
-    backgroundColor: "#efefefff",
+    backgroundColor: "#eaf8fbff",
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",
-    paddingTop:50,
+    paddingTop: 50,
   },
   banner: {
     height: 100,
     width: '75%',
-    textAlign:'center',
-    fontSize:30,
+    textAlign: 'center',
+    fontSize: 30,
     //color:"white",
     justifyContent: "center",
-    borderRadius:5,
+    borderRadius: 5,
     animationName: "myAnimation",
     animationDuration: '5s',
     animationIterationCount: "infinite",

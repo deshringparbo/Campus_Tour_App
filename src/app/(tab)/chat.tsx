@@ -28,12 +28,13 @@ const ChatBot = () => {
 }
 const styles = StyleSheet.create({
   header: {
-    height: 70,
+    height: 60,
     width: '100%',
     backgroundColor: "#743f3fff",
   },
   chatboxx: {
-    height: 900,
+    // height: 600,
+    flex:1,
     width: '100%',
     justifyContent: "center",
     alignItems: "center",
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   },
   chatbo: {
     color: "white",
-    height: 100,
+    height: 800,
     width: '80%',
     alignContent: "center",
     fontSize: 40,

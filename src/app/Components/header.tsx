@@ -7,7 +7,7 @@ const Header = () => {
         <View style={styles.topbar}>
             <View style={styles.name} >
                 <Text style={styles.headname}>Scholar's Institute of Technology and Management</Text>
-                <Text style={styles.motoname}>..Brings out the scholar's in you</Text>
+                <Text style={styles.motoname}>...Brings out the scholar's in you...</Text>
             </View>
             <View>
                 <ColLogo />

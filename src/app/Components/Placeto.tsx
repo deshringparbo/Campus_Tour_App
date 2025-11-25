@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
         height: 200,
         width: 280,
         backgroundColor: "blue",
+        borderTopLeftRadius: 20,
         marginHorizontal: 20,
 
     },
@@ -73,6 +74,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 120,
         borderTopLeftRadius: 20,
+        overflow: 'hidden',
 
     },
 })
