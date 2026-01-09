@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: "#eaf8fbff",
+    paddingBottom:70,
   },
   clickedd: {
     //flex: 1,

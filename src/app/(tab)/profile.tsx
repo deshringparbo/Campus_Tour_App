@@ -11,7 +11,7 @@ const Profile = () => {  // its change to about section
       <View>
         <View style={styles.header}></View>
       </View>
-      <ScrollView style={{backgroundColor: "#eaf8fbff"}}>
+      <ScrollView style={{ backgroundColor: "#121212" }}>
         <AppLogo />
         <AboutSitm />
         <WebLinks />
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   header: {
     height: 60,
     width: '100%',
-    backgroundColor: "#743f3fff",
+    backgroundColor: "#121212",
   },
 })
 

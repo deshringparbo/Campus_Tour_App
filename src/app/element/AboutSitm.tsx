@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: "#eaf8fbff",
+        paddingBottom:30,
     },
     innerBox: {
         // height: 200,

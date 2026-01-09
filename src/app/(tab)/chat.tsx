@@ -6,22 +6,26 @@ import Header from '../Components/header';
 const ChatBot = () => {
   return (
     <View>
-      <View style={styles.header}></View>
-      <Header />
       <ScrollView
         decelerationRate="normal" bounces={true}
       >
-        <View style={styles.chatboxx}>
-          <Video
-            source={require("../../assets/images/backvideo.mp4")}
-            style={styles.backvideo}
-            resizeMode={ResizeMode.COVER}
-            shouldPlay
-            isLooping
-            isMuted
-          />
-          <Text style={styles.chatbo}>ChatBot Coming Soon</Text>
-        </View>
+        <View style={styles.header}></View>
+        <Header />
+        <ScrollView
+          decelerationRate="normal" bounces={true}
+        >
+          <View style={styles.chatboxx}>
+            <Video
+              source={require("../../assets/images/backvideo.mp4")}
+              style={styles.backvideo}
+              resizeMode={ResizeMode.COVER}
+              shouldPlay
+              isLooping
+              isMuted
+            />
+            <Text style={styles.chatbo}>ChatBot Coming Soon</Text>
+          </View>
+        </ScrollView>
       </ScrollView>
     </View>
   )
@@ -30,11 +34,11 @@ const styles = StyleSheet.create({
   header: {
     height: 60,
     width: '100%',
-    backgroundColor: "#743f3fff",
+    backgroundColor: "#121212",
   },
   chatboxx: {
     // height: 600,
-    flex:1,
+    flex: 1,
     width: '100%',
     justifyContent: "center",
     alignItems: "center",

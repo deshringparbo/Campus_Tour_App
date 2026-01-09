@@ -8,8 +8,9 @@ const Placeto = () => {
                 <Text style={styles.viewtext}>view all</Text>
             </View>
             <View style={styles.contentbox}>
-                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} decelerationRate="normal" bounces={true}>
-
+                <ScrollView
+                    horizontal={false} showsHorizontalScrollIndicator={false} decelerationRate="normal" bounces={true}
+                >
                     <View style={styles.contentbody}>
                         <Pressable style={styles.boxes} onPress={() => Alert.alert("clicked me already")}>
                             <ImageBackground
@@ -21,7 +22,7 @@ const Placeto = () => {
                                 <Text style={styles.placename}>Place name to be shown</Text>
                             </View>
                         </Pressable>
-                        <Pressable style={styles.boxes} onPress={() => Alert.alert("click here")}>B Block</Pressable>
+                        <Pressable style={styles.boxes} onPress={() => Alert.alert("click here")}>Library</Pressable>
                         <Pressable style={styles.boxes} onPress={() => Alert.alert("click me")}>Hostel</Pressable>
                     </View>
                 </ScrollView>
@@ -31,7 +32,6 @@ const Placeto = () => {
 }
 const styles = StyleSheet.create({
     view: {
-        height: 50,
         width: "95%",
         fontFamily: '1m14',
 
@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
 
     },
     contentbox: {
-        height: 220,
         width: '100%',
         //backgroundColor: "grey",
         justifyContent: 'center',
@@ -50,17 +49,14 @@ const styles = StyleSheet.create({
         paddingTop: 20,
     },
     contentbody: {
-        height: 200,
         width: "100%",
-        // backgroundColor: 'red',
         flex: 1,
-        flexDirection: 'row',
-        justifyContent: "space-between",
+        flexDirection: 'column',
     },
     boxes: {
         height: 200,
         width: 280,
-        backgroundColor: "blue",
+        backgroundColor: "pink",
         borderTopLeftRadius: 20,
         marginHorizontal: 20,
 

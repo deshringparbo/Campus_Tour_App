@@ -27,9 +27,9 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: "#eaf8fbff",
-        
-        
+        backgroundColor: "#121212",
+
+
     },
     heroBox: {
         // height: 140,
@@ -37,33 +37,36 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderBlockColor: '#494949ff',
         borderWidth: 0.3,
-        backgroundColor: "#eaf8fbff",
-        shadowColor: "#949494ff",
+        backgroundColor: "#192930",
+        shadowColor: "rgb(41, 41, 41)",
         shadowOffset: { width: 5, height: 10 },
         shadowOpacity: 0.25,
         shadowRadius: 4,
-        paddingBottom:20,
-        marginBottom:30,
-        marginTop:30,
-    },
-    textboxx: {
-        paddingLeft: 20,
-        paddingRight: 15,
-        paddingTop: 20,
-        fontSize: 19,
-        gap: 2,
+        paddingBottom: 20,
+        marginBottom: 30,
+        marginTop: 30,
     },
     button: {
         height: 40,
-        width: 90,
-        backgroundColor: "black",
+        width: "90%",
+        backgroundColor: "#212199",
         color: 'white',
         marginLeft: 20,
-        marginTop: 10,
+        marginTop: 25,
         borderRadius: 10,
         alignItems: 'center',
         justifyContent: 'center',
     },
+
+  
+    textboxx: {
+        paddingLeft: 20,
+        color:"white",
+        paddingRight: 15,
+        paddingTop: 40,
+        fontSize: 19,
+        gap: 5,
+    }
 
 })
 

@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   welcomebox: {
     height: 150,
     width: '100%',
-    backgroundColor: "#eaf8fbff",
+    backgroundColor: "#121212",
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     width: '75%',
     textAlign: 'center',
     fontSize: 30,
-    //color:"white",
+    color:"white",
     justifyContent: "center",
     borderRadius: 5,
     animationName: "myAnimation",

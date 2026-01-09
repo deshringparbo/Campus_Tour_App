@@ -10,7 +10,7 @@ const MapPage = () => {
       <View style={styles.header}></View>
       <Header />
       <ScrollView decelerationRate="normal" bounces={true}
-      style={{ backgroundColor: "#eaf8fbff"}}
+      style={{ backgroundColor: "#121212"}}
       >
         <Map height={650} width='100%' />
       </ScrollView>
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   header: {
     height: 60,
     width: '100%',
-    backgroundColor: "#743f3fff",
+    backgroundColor: "#121212",
   },
   // mapstyle:{
   //   flex:1,
