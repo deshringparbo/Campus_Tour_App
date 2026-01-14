@@ -18,25 +18,27 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: "#eaf8fbff",
+        backgroundColor: "#121212",
         paddingBottom:30,
     },
     innerBox: {
         // height: 200,
-        width: '80%',
+        width: '90%',
         borderRadius: 10,
-        borderBlockColor: '#494949ff',
-        backgroundColor: "#eaf8fbff",
+        //borderBlockColor: 'rgb(255, 255, 255)',
+        backgroundColor: "#121212",
     },
     textBoxes: {
+        color:"white",
         textAlign: 'justify',
-        fontSize:18,
+        fontSize:14,
     },
     headText: {
         fontWeight: 'bold',
         fontSize: 20,
         paddingTop: 20,
         paddingBottom: 10,
+         color:"white",
     },
 
 

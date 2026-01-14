@@ -8,22 +8,22 @@ const ShortLinks = () => {
             <Text style={styles.quick}>Quick Actions</Text>
             <View style={styles.underbox}>
                 <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
-                    <View style={styles.linkbox}><FontAwesome size={30} name="home" color="white" />
+                    <View style={styles.linkbox}><FontAwesome size={28} name="camera" color="rgb(168, 180, 206)" />
+                        <Text style={styles.titlebox}>Camera</Text>
+                    </View>
+                </Pressable>
+                <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
+                    <View style={styles.linkbox}><FontAwesome size={28} name="map-o" color="rgb(168, 180, 206)" />
+                        <Text style={styles.titlebox}>Map</Text>
+                    </View>
+                </Pressable>
+                <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
+                    <View style={styles.linkbox}><FontAwesome size={28} name="home" color="rgb(168, 180, 206)" />
                         <Text style={styles.titlebox}>Home</Text>
                     </View>
                 </Pressable>
                 <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
-                    <View style={styles.linkbox}><FontAwesome size={30} name="home" color="white" />
-                        <Text style={styles.titlebox}>Home</Text>
-                    </View>
-                </Pressable>
-                <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
-                    <View style={styles.linkbox}><FontAwesome size={30} name="home" color="white" />
-                        <Text style={styles.titlebox}>Home</Text>
-                    </View>
-                </Pressable>
-                <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
-                    <View style={styles.linkbox}><FontAwesome size={30} name="home" color="white" />
+                    <View style={styles.linkbox}><FontAwesome size={28} name="home" color="rgb(168, 180, 206)" />
                         <Text style={styles.titlebox}>Home</Text>
                     </View>
                 </Pressable>
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     },
     titlebox: {
         fontWeight: "bold",
-        fontSize: 13,
+        fontSize: 9,
         color: "white"
     },
 })

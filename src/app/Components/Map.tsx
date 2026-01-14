@@ -93,8 +93,9 @@ const Map = ({ height = 650, width = '100%' }) => {
 const styles = StyleSheet.create({
     container: {
         borderRadius: 2,
-        backgroundColor: '#f0feffff',
+        backgroundColor: 'rgb(0, 0, 0)',
         padding: 20,
+        paddingBottom:50,
 
     },
     map: {
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
     },
     callout: {
-        backgroundColor: 'white',
+        backgroundColor: '#121212',
         borderRadius: 8,
         padding: 12,
         paddingHorizontal: 16,

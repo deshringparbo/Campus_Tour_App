@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
     logoapp: {
         height: 200,
         width: '100%',
-        backgroundColor: "#eaf8fbff",
+        backgroundColor: "#121212",
         alignItems: 'center',
         justifyContent: 'center',
-        borderBottomColor: 'black',
+        borderBottomColor: 'grey',
         borderBottomWidth: 1,
     },
     app: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         width: 80,
         resizeMode: 'cover',
         justifyContent: 'center',
-        borderRadius: '50%',
+        borderRadius: 20,
         overflow: 'hidden'
     },
     ImageBackground: {
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     textbro: {
         paddingTop: 20,
         fontSize: 30,
-        color: 'black',
+        color: 'white',
         fontWeight: 'bold',
     },
 })

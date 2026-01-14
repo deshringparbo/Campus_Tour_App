@@ -12,7 +12,7 @@ const MapPage = () => {
       <ScrollView decelerationRate="normal" bounces={true}
       style={{ backgroundColor: "#121212"}}
       >
-        <Map height={650} width='100%' />
+        <Map height={680} width='100%' />
       </ScrollView>
     </View>
   )

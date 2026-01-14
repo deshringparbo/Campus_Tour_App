@@ -30,7 +30,7 @@ const TabHome = () => {
 const styles = StyleSheet.create({
   fullscreen: {
     flex: 1,
-    backgroundColor: "#121212",
+    backgroundColor: "#000000",
   },
   header: {
     height: 60,
