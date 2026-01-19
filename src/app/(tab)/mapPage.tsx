@@ -6,7 +6,7 @@ import Map from '../Components/Map';
 
 const MapPage = () => {
   return (
-    <View>
+    <View style={{ backgroundColor: "#121212" }}>
       <View style={styles.header}></View>
       <Header />
       <ScrollView decelerationRate="normal" bounces={true}

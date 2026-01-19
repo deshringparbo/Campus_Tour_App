@@ -35,7 +35,7 @@ const ShortLinks = () => {
 const styles = StyleSheet.create({
     boxes: {
         width: '100%',
-        backgroundColor: "#121212",
+        backgroundColor: "#000000",
     },
     quick: {
         fontSize: 20,
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         // height: 130,
         width: '90%',
         marginLeft: '5%',
-        backgroundColor: "#121212",
+        backgroundColor: "#000000",
         flex: 1,
         flexDirection: 'row',
         justifyContent: "space-between",

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Alert, Pressable, StyleSheet, Text, View } from 'react-native'
+import { Alert, Pressable, StyleSheet, Text, View,Image, TouchableOpacity } from 'react-native'
+import Library from '../Pages/Library'
 
 const Placeto = () => {
     return (
@@ -10,12 +11,50 @@ const Placeto = () => {
                 <View style={styles.contentbox}>
                     <View style={styles.contentbody}>
                         <Pressable style={styles.boxes} onPress={() => Alert.alert("clicked me already")}>
-                            <View>
-                                <Text style={styles.placename}>Place name to be shown</Text>
+                            <View style={styles.library}>
+                                <Image
+                                source={require("../../assets/images/library.jpeg")}
+                                style={styles.images}
+                                ></Image>
+                                <View style={styles.buttonclickon}>
+                                    <Text style={styles.placename}>Library</Text>
+                                    <Text style={styles.placenameaddress}>2nd floor A-Block Building</Text>
+                                    <TouchableOpacity style={styles.button} onPress={() => Alert.alert("clicked you")}>
+                                       <Text style={styles.buttonlibrary}> Start A Toour</Text>
+                                   </TouchableOpacity>
+                                </View>
                             </View>
                         </Pressable>
-                        <Pressable style={styles.boxes} onPress={() => Alert.alert("click here")}>Library</Pressable>
-                        <Pressable style={styles.boxes} onPress={() => Alert.alert("click me")}>Hostel</Pressable>
+                        <Pressable style={styles.boxes} onPress={() => Alert.alert("click here")}>
+                            <View style={styles.library}>
+                                <Image
+                                source={require("../../assets/images/library.jpeg")}
+                                style={styles.images}
+                                ></Image>
+                                <View style={styles.buttonclickon}>
+                                    <Text style={styles.placename}>Library</Text>
+                                    <Text style={styles.placenameaddress}>2nd floor A-Block Building</Text>
+                                    <TouchableOpacity style={styles.button} onPress={() => Alert.alert("clicked you")}>
+                                       <Text style={styles.buttonlibrary}> Start A Toour</Text>
+                                   </TouchableOpacity>
+                                </View>
+                            </View>
+                        </Pressable>
+                        <Pressable style={styles.boxes} onPress={() => Alert.alert("click me")}>
+                            <View style={styles.library}>
+                                <Image
+                                source={require("../../assets/images/library.jpeg")}
+                                style={styles.images}
+                                ></Image>
+                                <View style={styles.buttonclickon}>
+                                    <Text style={styles.placename}>Boy's Hostel</Text>
+                                    <Text style={styles.placenameaddress}>2nd floor A-Block Building</Text>
+                                    <TouchableOpacity style={styles.button} onPress={() => Alert.alert("clicked you")}>
+                                       <Text style={styles.buttonlibrary}> Start A Toour</Text>
+                                   </TouchableOpacity>
+                                </View>
+                            </View>
+                        </Pressable>
                     </View>
                 </View>
             </View>
@@ -26,7 +65,7 @@ const styles = StyleSheet.create({
     view: {
         width: "100%",
         paddingTop:"5%",
-
+        paddingBottom:"20%",
     },
     viewtext: {
         fontWeight: 'bold',
@@ -48,18 +87,40 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     boxes: {
-        height:10,  // need to remove
+       // height:10,  // need to remove
         width: '100%',
-        backgroundColor: "pink",
+        backgroundColor: "#192930",
         borderRadius:20,
-        marginBottom:10,
+        marginBottom:20,    
+    },
 
+    library:{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 
+    images:{
+        height: 120,
+        width:'100%',
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
     },
     placename: {
         color: "white",
-        paddingTop: 20,
-        textAlign: "center",
+        paddingTop: 5,
+        paddingBottom: 1,
+        marginLeft: '5%',
+        //textAlign: "center",
+        fontSize:25,
+    },
+    placenameaddress: {
+        color: "white",
+        marginLeft: '5%',
+        //textAlign: "center",
+        fontSize:10,
     },
     background: {
         width: '100%',
@@ -67,6 +128,28 @@ const styles = StyleSheet.create({
         // borderTopLeftRadius: 20,
         overflow: 'hidden',
 
+    },
+
+    button:{
+        height: 40,
+        width: '100%',
+        marginTop: '2%',
+        backgroundColor: 'white',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 20,
+        marginBottom: '2%'
+    },
+    buttonlibrary:{
+        color: '#183062ff',
+        fontWeight: 'bold',
+    },
+    buttonclickon:{
+        width: '100%',
+        //marginLeft: '5%',
+       // marginTop: '5%',
+        //backgroundColor: 'red',
     },
 })
 

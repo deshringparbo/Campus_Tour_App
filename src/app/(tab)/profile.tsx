@@ -8,7 +8,7 @@ import WebLinks from '../element/WebLinks';
 const Profile = () => {  // its change to about section
   return (
     <>
-      <View>
+      <View style={{ backgroundColor: "#121212" }} >
         <View style={styles.header}></View>
       </View>
       <ScrollView style={{ backgroundColor: "#121212" }}>

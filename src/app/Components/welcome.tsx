@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   welcomebox: {
     height: 150,
     width: '100%',
-    backgroundColor: "#121212",
+    backgroundColor: "#000000",
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",

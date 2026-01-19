@@ -6,6 +6,7 @@ import Placeto from '../Components/Placeto';
 import ShortLinks from '../Components/ShortLinks';
 import Welcome from '../Components/welcome';
 import AiBoxHome from '../Components/AiBoxHome';
+import Upcomingevent from '../Components/Upcomingevent';
 
 const TabHome = () => {
   return (
@@ -22,6 +23,7 @@ const TabHome = () => {
         {/* <HeroBox2 /> */}
         {/* <Map height={400} width={'100%'} /> */}
         <Placeto />
+        {/* <Upcomingevent /> */}
       </ScrollView >
     </>
   )

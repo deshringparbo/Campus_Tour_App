@@ -5,7 +5,7 @@ import Header from '../Components/header';
 
 const ChatBot = () => {
   return (
-    <View>
+    <View style={{ backgroundColor: "#121212" }}>
       <ScrollView
         decelerationRate="normal" bounces={true}
       >
