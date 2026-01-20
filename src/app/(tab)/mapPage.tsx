@@ -2,30 +2,28 @@ import React from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import Header from '../Components/header';
 import Map from '../Components/Map';
+import Headeroftop from '../Components/Headeroftop';
 
 
 const MapPage = () => {
   return (
-    <View style={{ backgroundColor: "#121212" }}>
-      <View style={styles.header}></View>
-      <Header />
+    <View style={styles.container1}>
+      <Headeroftop />
+       <Header /> 
       <ScrollView decelerationRate="normal" bounces={true}
       style={{ backgroundColor: "#121212"}}
       >
-        <Map height={680} width='100%' />
+        <Map 
+          height={750} width='100%'
+          />
       </ScrollView>
     </View>
   )
 }
 const styles = StyleSheet.create({
-  header: {
-    height: 60,
-    width: '100%',
-    backgroundColor: "#121212",
+  container1:{
+    flex:1,
   },
-  // mapstyle:{
-  //   flex:1,
-  // },
 })
 
 export default MapPage;

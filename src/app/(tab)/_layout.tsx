@@ -44,7 +44,7 @@ const TabLayout = () => {
       ),
     }}
     >
-      <Tabs.Screen name="index" options={{ title: "Home", tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} /> }} />
+      <Tabs.Screen name="index" options={{ title: "Home", tabBarIcon: ({color}) => <FontAwesome size={28} name="home" color={color} /> }} />
       <Tabs.Screen name="chat" options={{ title: "ChatBot", tabBarIcon: ({ color }) => <FontAwesome size={28} name="wechat" color={color} /> }} />
       <Tabs.Screen name="mapPage" options={{ title: "Map", tabBarIcon: ({ color }) => <FontAwesome5 size={28} name="map-marked" color={color} /> }} />
       <Tabs.Screen name="profile" options={{ title: "Setting", tabBarIcon: ({ color }) => <FontAwesome size={28} name="gear" color={color} /> }} />

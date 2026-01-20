@@ -7,11 +7,12 @@ import ShortLinks from '../Components/ShortLinks';
 import Welcome from '../Components/welcome';
 import AiBoxHome from '../Components/AiBoxHome';
 import Upcomingevent from '../Components/Upcomingevent';
+import Headeroftop from '../Components/Headeroftop';
 
 const TabHome = () => {
   return (
     <>
-      <View style={styles.header}></View>
+      <Headeroftop />
       <Header />
       <ScrollView style={styles.fullscreen}
         decelerationRate="normal" bounces={true}
@@ -34,12 +35,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#000000",
   },
-  header: {
-    height: 60,
-    width: '100%',
-    backgroundColor: "#121212",
-  },
-
 })
 
 export default TabHome;

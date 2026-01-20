@@ -10,12 +10,16 @@ const Map = ({ height = 650, width = '100%' }) => {
             {(Platform.OS === 'web' || Platform.OS === 'ios' || Platform.OS === 'android') && (
 
                 <View style={styles.map}>
+
+                    {/* This is for desktop view link of a map, */}
+
                     {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7166.495570028291!2d91.725019!3d26.090829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5c45471a4913%3A0xfcbcab5629378517!2sScholar&#39;s%20Institute%20of%20Technology%20and%20Management!5e0!3m2!1sen!2sin!4v1734036513366!5m2!1sen!2sin" frameBorder="0" style={{ width: '100%', height: '100%', borderRadius: 10 }} >
                     </iframe> */}
 
-
+                   
+                   {/* This is for mobile view map using MapView */}
                     <MapView
-                        style={{ width: '100%', height: '100%' }}
+                        style={{ width: '100%', height: '100%' ,}}
                         mapType='hybridFlyover'
                         initialRegion={{
                             latitude: 26.090829,
@@ -29,9 +33,7 @@ const Map = ({ height = 650, width = '100%' }) => {
                             title="SITM GHY"
                             description="campus location"
                         >
-
                         </Marker>
-
                         <Marker
                             coordinate={{ latitude: 26.090629, longitude: 91.725019 }}
                             onPress={() => setSelectedMarker(1)}
@@ -96,6 +98,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgb(0, 0, 0)',
         padding: 20,
         paddingBottom:50,
+       // width:'100%'
 
     },
     map: {
@@ -105,10 +108,10 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
     },
     callout: {
-        backgroundColor: '#121212',
+        backgroundColor: '#fff',
         borderRadius: 8,
         padding: 12,
-        paddingHorizontal: 16,
+        paddingHorizontal: 15,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.25,

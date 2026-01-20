@@ -2,6 +2,7 @@ import { ResizeMode, Video } from "expo-av";
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import Header from '../Components/header';
+import Headeroftop from "../Components/Headeroftop";
 
 const ChatBot = () => {
   return (
@@ -9,7 +10,7 @@ const ChatBot = () => {
       <ScrollView
         decelerationRate="normal" bounces={true}
       >
-        <View style={styles.header}></View>
+        <Headeroftop />
         <Header />
         <ScrollView
           decelerationRate="normal" bounces={true}
@@ -31,11 +32,6 @@ const ChatBot = () => {
   )
 }
 const styles = StyleSheet.create({
-  header: {
-    height: 60,
-    width: '100%',
-    backgroundColor: "#121212",
-  },
   chatboxx: {
     // height: 600,
     flex: 1,
@@ -65,4 +61,5 @@ const styles = StyleSheet.create({
   },
 })
 
-export default ChatBot
+export default ChatBot;
+

@@ -1,8 +1,10 @@
 import { AntDesign, FontAwesome5 } from "@expo/vector-icons"
 import React from 'react'
+import { useNavigation } from "expo-router"
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 const AiBoxHome = () => {
+    const navigation = useNavigation();
     return (
         <View style={styles.outerbox} >
             <View style={styles.innerbox}>
@@ -21,7 +23,10 @@ const AiBoxHome = () => {
                         <Text style={styles.introtext1}>Welcome to Campus!</Text>
                         <Text style={styles.introtext2}>Explore the campus with AI-powered guidance and discover amazing places. </Text>
                     </View>
-                    <TouchableOpacity style={styles.button} onPress={() => Alert.alert("clicked you")}>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("mapPage")
+                        //  Alert.alert("clicked you") 
+                         
+                         }>
                         <Text style={styles.buttontext}> <AntDesign size={15} name="wechat" color='#183062ff' /> Start AI Toour</Text>
                     </TouchableOpacity>
                 </View>

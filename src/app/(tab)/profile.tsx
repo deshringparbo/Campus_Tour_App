@@ -4,12 +4,13 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import AboutSitm from "../element/AboutSitm";
 import AppLogo from '../element/AppLogo';
 import WebLinks from '../element/WebLinks';
+import Headeroftop from '../Components/Headeroftop';
 
 const Profile = () => {  // its change to about section
   return (
     <>
       <View style={{ backgroundColor: "#121212" }} >
-        <View style={styles.header}></View>
+        <Headeroftop />
       </View>
       <ScrollView style={{ backgroundColor: "#121212" }}>
         <AppLogo />
@@ -20,13 +21,5 @@ const Profile = () => {  // its change to about section
     </>
   )
 }
-
-const styles = StyleSheet.create({
-  header: {
-    height: 60,
-    width: '100%',
-    backgroundColor: "#121212",
-  },
-})
 
 export default Profile;

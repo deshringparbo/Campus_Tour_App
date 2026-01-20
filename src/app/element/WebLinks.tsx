@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   },
   clickedText: {
     fontSize: 18,
-    color: "blue",
+    color: "white",
     paddingTop: 16,
   },
 

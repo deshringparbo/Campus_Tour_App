@@ -1,8 +1,10 @@
 import { FontAwesome } from "@expo/vector-icons"
 import React from 'react'
 import { Alert, Pressable, StyleSheet, Text, View } from 'react-native'
+import { useNavigation } from "expo-router"
 
 const ShortLinks = () => {
+    const navigation = useNavigation();
     return (
         <View style={styles.boxes}>
             <Text style={styles.quick}>Quick Actions</Text>
@@ -12,7 +14,9 @@ const ShortLinks = () => {
                         <Text style={styles.titlebox}>Camera</Text>
                     </View>
                 </Pressable>
-                <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
+                <Pressable style={styles.Link1} onPress={() => navigation.navigate('mapPage')
+                    //  Alert.alert("click me")
+                     }>
                     <View style={styles.linkbox}><FontAwesome size={28} name="map-o" color="rgb(168, 180, 206)" />
                         <Text style={styles.titlebox}>Map</Text>
                     </View>
