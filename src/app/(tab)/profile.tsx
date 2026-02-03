@@ -6,7 +6,7 @@ import AppLogo from '../element/AppLogo';
 import WebLinks from '../element/WebLinks';
 import Headeroftop from '../Components/Headeroftop';
 
-const Profile = () => {  // its change to about section
+const Profile = () => { 
   return (
     <>
       <View style={{ backgroundColor: "#121212" }} >

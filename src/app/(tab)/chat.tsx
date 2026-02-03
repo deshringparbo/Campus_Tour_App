@@ -7,10 +7,10 @@ import Headeroftop from "../Components/Headeroftop";
 const ChatBot = () => {
   return (
     <View style={{ backgroundColor: "#121212" }}>
+      <Headeroftop />
       <ScrollView
         decelerationRate="normal" bounces={true}
-      >
-        <Headeroftop />
+      >  
         <Header />
         <ScrollView
           decelerationRate="normal" bounces={true}

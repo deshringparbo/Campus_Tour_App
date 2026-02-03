@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
         paddingBottom: 1,
         marginLeft: '5%',
         //textAlign: "center",
-        fontSize:25,
+        fontSize:28,
     },
     placenameaddress: {
         color: "white",

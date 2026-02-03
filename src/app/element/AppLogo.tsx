@@ -7,7 +7,6 @@ const AppLogo = () => {
             <View style={styles.logoapp}>
                 <ImageBackground
                     style={styles.app}
-
                     source={require('../../assets/images/icon.png')}
                 >
                 </ImageBackground>

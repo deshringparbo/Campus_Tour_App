@@ -1,5 +1,7 @@
 import { FontAwesome } from "@expo/vector-icons"
 import React from 'react'
+import { Ionicons } from "@expo/vector-icons"
+import { Camera } from "lucide-react-native"
 import { Alert, Pressable, StyleSheet, Text, View } from 'react-native'
 import { useNavigation } from "expo-router"
 
@@ -10,25 +12,33 @@ const ShortLinks = () => {
             <Text style={styles.quick}>Quick Actions</Text>
             <View style={styles.underbox}>
                 <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
-                    <View style={styles.linkbox}><FontAwesome size={28} name="camera" color="rgb(168, 180, 206)" />
+                    <View style={styles.linkbox}>
+                        {/* <FontAwesome size={28} name="camera" color="rgb(168, 180, 206)" /> */}
+                        <Ionicons name="camera-outline" size={28} color={"#fff"} />
                         <Text style={styles.titlebox}>Camera</Text>
                     </View>
                 </Pressable>
                 <Pressable style={styles.Link1} onPress={() => navigation.navigate('mapPage')
                     //  Alert.alert("click me")
                      }>
-                    <View style={styles.linkbox}><FontAwesome size={28} name="map-o" color="rgb(168, 180, 206)" />
+                    <View style={styles.linkbox}>
+                        {/* <FontAwesome size={28} name="map-o" color="rgb(168, 180, 206)" /> */}
+                        <Ionicons name="map-outline" size={28} color={"#fff"} />
                         <Text style={styles.titlebox}>Map</Text>
                     </View>
                 </Pressable>
                 <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
-                    <View style={styles.linkbox}><FontAwesome size={28} name="home" color="rgb(168, 180, 206)" />
+                    <View style={styles.linkbox}>
+                        {/* <FontAwesome size={28} name="home" color="rgb(168, 180, 206)" /> */}
+                        <Ionicons name="home-outline" size={28} color={"#fff"} />
                         <Text style={styles.titlebox}>Home</Text>
                     </View>
                 </Pressable>
                 <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
-                    <View style={styles.linkbox}><FontAwesome size={28} name="home" color="rgb(168, 180, 206)" />
-                        <Text style={styles.titlebox}>Home</Text>
+                    <View style={styles.linkbox}>
+                        {/* <FontAwesome size={28} name="home" color="rgb(168, 180, 206)" /> */}
+                        <Camera size={28} strokeWidth={2} color={"#fff"} />
+                        <Text style={styles.titlebox}>Camera</Text>
                     </View>
                 </Pressable>
             </View>
@@ -72,7 +82,7 @@ const styles = StyleSheet.create({
     },
     titlebox: {
         fontWeight: "bold",
-        fontSize: 9,
+        fontSize: 8,
         color: "white"
     },
 })

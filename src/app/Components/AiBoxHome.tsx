@@ -79,8 +79,8 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     aitext2: {
-        fontSize: 13,
-        fontWeight: 600,
+        fontSize: 9,
+        fontWeight: 300,
         color: 'white',
     },
 
@@ -91,12 +91,12 @@ const styles = StyleSheet.create({
         marginTop: '5%',
     },
     introtext1: {
-        fontSize: 30,
+        fontSize: 28,
         fontWeight: 700,
         color: 'white',
     },
     introtext2: {
-        fontSize: 15,
+        fontSize: 11,
         color: 'white',
     },
     infoarea: {
@@ -119,7 +119,8 @@ const styles = StyleSheet.create({
     buttontext: {
         color: '#183062ff',
         fontWeight: 'bold',
-        paddingLeft: '2%'
+        paddingLeft: '2%',
+        fontSize: 11,
     }
 
 
