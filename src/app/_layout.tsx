@@ -1,7 +1,7 @@
-import { Inter_900Black as bold, useFonts } from '@expo-google-fonts/inter';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { useEffect, useState } from 'react';
+import { Inter_900Black as bold, useFonts } from "@expo-google-fonts/inter";
+import { Stack } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { useEffect, useState } from "react";
 
 SplashScreen.preventAutoHideAsync();
 

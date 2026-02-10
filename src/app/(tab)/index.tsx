@@ -1,21 +1,23 @@
-import React from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
-import Header from '../Components/header';
-import HeroBox from '../Components/HeroBox';
-import Placeto from '../Components/Placeto';
-import ShortLinks from '../Components/ShortLinks';
-import Welcome from '../Components/welcome';
-import AiBoxHome from '../Components/AiBoxHome';
-import Upcomingevent from '../Components/Upcomingevent';
-import Headeroftop from '../Components/Headeroftop';
+import React from "react";
+import { ScrollView, StyleSheet, View } from "react-native";
+import Header from "../Components/header";
+import HeroBox from "../Components/HeroBox";
+import Placeto from "../Components/Placeto";
+import ShortLinks from "../Components/ShortLinks";
+import Welcome from "../Components/welcome";
+import AiBoxHome from "../Components/AiBoxHome";
+import Upcomingevent from "../Components/Upcomingevent";
+import Headeroftop from "../Components/Headeroftop";
 
 const TabHome = () => {
   return (
     <>
       <Headeroftop />
       <Header />
-      <ScrollView style={styles.fullscreen}
-        decelerationRate="normal" bounces={true}
+      <ScrollView
+        style={styles.fullscreen}
+        decelerationRate="normal"
+        bounces={true}
       >
         <Welcome />
         {/* <HeroBox /> */}
@@ -25,16 +27,16 @@ const TabHome = () => {
         {/* <Map height={400} width={'100%'} /> */}
         <Placeto />
         {/* <Upcomingevent /> */}
-      </ScrollView >
+      </ScrollView>
     </>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   fullscreen: {
     flex: 1,
     backgroundColor: "#000000",
   },
-})
+});
 
 export default TabHome;
