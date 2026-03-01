@@ -69,10 +69,11 @@ const TabLayout = () => {
           title: "Map",
           tabBarIcon: ({ color }) => (
             //  <FontAwesome5 size={28} name="map-marked" color={color} />
-            <Ionicons name="map-sharp" size={28} color={color} />
+            <Ionicons name="map-outline" size={28} color={color} />
           ),
         }}
       />
+
 
       <Tabs.Screen
         name="profile"

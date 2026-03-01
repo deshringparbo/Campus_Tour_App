@@ -34,8 +34,8 @@ const ShortLinks = () => {
         <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
           <View style={styles.linkbox}>
             {/* <FontAwesome size={28} name="home" color="rgb(168, 180, 206)" /> */}
-            <Ionicons name="home-outline" size={28} color={"#fff"} />
-            <Text style={styles.titlebox}>Home</Text>
+            <Ionicons name="scan" size={28} color={"#fff"} />
+            <Text style={styles.titlebox}>Scan</Text>
           </View>
         </Pressable>
         <Pressable style={styles.Link1} onPress={() => Alert.alert("click me")}>
